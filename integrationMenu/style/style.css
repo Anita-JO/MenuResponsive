@@ -66,13 +66,26 @@ li:last-child{
 	background-size:1.5rem;
 	padding-right:2rem;
 }
+.sidebar-active {
+	display :none;
+}
 @media screen and (min-width:768px) and (max-width :1440px){
 		.iconSearch >img {display :none;}
-		.sidebar > img {
+		.sidebar-button > img {
 			display :none;
 		}
 }
-
+@media screen and (min-width:768px) and (max-width:990px) {
+	.search-box {
+		display:none;
+	}
+	.iconSearch > img {
+		display :block;
+		margin-right:0;
+		height:40px;
+		width :40px;
+	}
+}
 @media screen and (max-width:768px) {
 	
 	.search-box {
@@ -84,12 +97,29 @@ li:last-child{
 		height:40px;
 		width :40px;
 	}
-	.sidebar > img {
-			display :block;
-			margin-left:0;
-			height:40px;
-			width:40px;
+	.sidebar-button > img {
+		display :block;
+		margin-left:0;
+		height:40px;
+		width:40px;
 		}
 
-	
+	.navbar-collapse {
+		/*height: 100%;
+	    width: 100%;
+	    position: fixed;
+	    z-index: 1;
+	    top: 0;
+	    left: 0;
+	    overflow-x: hidden;
+	    transition: 0.5s;
+	    padding-top: 75px;
+	    background-color:transparent;
+	*/}
+	ul {
+		display :block;
+	}
+	ul > li {
+		width:100%;
+	}
 }

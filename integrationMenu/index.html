@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="icon" type="image/png" href="" />
 		<link rel="stylesheet" href="style/style.css" type="text/css">	
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -15,51 +15,53 @@
 	</head>
 	<body>
 		<header class="navbar">
-		<div class="sidebar">
+			<div class="sidebar-button">
 			<img src="img/icon-align-justify.png" />
-		</div>
-		<h1>Logo site</h1>
-		
-		<div class="search-box">
+			</div>
+			<h1>Logo site</h1>
+			<div class="search-box">
 				<input type="text" class="search" aria-label="Small" aria-describedby="inputGroup-sizing-sm">	
-		</div>
-		<div class="iconSearch">
-			<img src="img/icon-search.png" />
-			
-		</div>
-		<div class="links">	
-		<nav class="nav-links navbar-expand-lg">
-			
-			 	  <div class="collapse navbar-collapse" id="navbarNavDropdown">
-					<ul class="navbar-nav">
-					  <li class="nav-item active">
-						<a class="nav-link" href="#">Guide <span class="sr-only">(current)</span></a>
-					  </li>
-					  <li class="nav-item">
-						<a class="nav-link" href="#">Config Reference</a>
-					  </li>
-					 <li class="nav-item">
-						<a class="nav-link" href="#">Default Theme Config</a>
-					 </li>
-					 <li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle dropdown-title" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
-						  Languages
-						</a>
-						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-						  <a class="dropdown-item" href="#">sous-menu1</a>
-						  <a class="dropdown-item" href="#">sous-menu2</a>
-						</div>
-					 </li>
-					  <li class="nav-item">
-						<a class="nav-link externalLink" href="#">Github</a>
-					  </li>
+			</div>
+			<div class="iconSearch">
+				<img src="img/icon-search.png" />
+			</div>
+			<div class="links">	
+				<nav class="nav-links navbar-expand-lg">
+					<!--<div class="collapse navbar-collapse" id="navbarNavDropdown">-->
+					<ul class="navbar-nav navbar-collapse">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Guide <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Config Reference</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Default Theme Config</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a class="nav-link dropdown-toggle dropdown-title" href="#" id="navbarDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="">
+							Languages
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">sous-menu1</a>
+							<a class="dropdown-item" href="#">sous-menu2</a>
+							</div>
+				 		</li>
+				    	<li class="nav-item">
+							<a class="nav-link externalLink" href="http://www.google.com">Github</a>
+						</li>
 					</ul>
-				  </div>
-		</nav>
-	</div>	
-		</header>	
-			
+				<!--</div>-->
+			</nav>
+		</div>	
+</header>	
 		<hr>
-		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('.sidebar-button').click(function(){
+					$('.navbar-collapse').toggle();
+				});
+			});
+		</script>
 	</body>
 </html>
